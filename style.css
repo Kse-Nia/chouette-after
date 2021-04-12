@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #fff url("img/pageload-spinner.gif") no-repeat center center
+    background: #FFF url(img/pageload-spinner.gif) no-repeat center center
 }
 
 .bloc {
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url(img/texture-paper.png);
     background-size: 280px 280px
 }
 
@@ -296,7 +296,7 @@ a:hover {
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 400;
     font-weight: 600;
     line-height: 44px
 }
@@ -362,7 +362,7 @@ a:hover {
     z-index: 2
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -434,7 +434,7 @@ nav .caret {
 }
 
 .dropdown-menu .dropdown span {
-    border: 4px solid black;
+    border: 4px solid #000;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -601,7 +601,7 @@ a[data-lightbox]:hover img {
     right: 20px;
     z-index: 20;
     background: rgba(0, 0, 0, .5);
-    border: 0;
+    border: none;
     line-height: 30px;
     padding: 0 9px 5px;
     opacity: .3
@@ -610,7 +610,7 @@ a[data-lightbox]:hover img {
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
-    opacity: 1.0;
+    opacity: 1;
     color: #FFF
 }
 
@@ -643,7 +643,7 @@ a[data-lightbox]:hover img {
 .snapshot-lb .lightbox-caption {
     padding: 0;
     color: rgba(0, 0, 0, .5);
-    background: 0
+    background: none
 }
 
 h1,
@@ -684,7 +684,7 @@ a {
 }
 
 p {
-    font-size: 11px
+    font-size: 17px
 }
 
 .tight-width-whitespace {
@@ -756,11 +756,11 @@ h4 {
 }
 
 .avatar {
-    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 4px 9px rgba(0, 0, 0, .3)
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, .7);
     padding: 40px 40px 40px 40px
 }
 
@@ -770,7 +770,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #fff
+    background-color: #FFF
 }
 
 .bgc-dark-slate-blue {
@@ -778,7 +778,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #f3976c
+    background-color: #F3976C
 }
 
 .tc-white {
@@ -786,7 +786,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #f3976c;
+    background: #F3976C;
     color: #FFFFFF !important
 }
 
@@ -817,22 +817,22 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png")
+    background-image: url(img/dots-bg.png)
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png")
+    background-image: url(img/lines-h2-bg.png)
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg")
+    background-image: url(img/la-chouette-agence-banniere.jpg)
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp")
+    background-image: url(img/image-de-presentation.bmp)
 }
 
-@media(max-width:1024px) {
+@media (max-width:1024px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px
@@ -847,7 +847,7 @@ h4 {
     }
 }
 
-@media(max-width:992px) and (min-width:768px) {
+@media (max-width:992px) and (min-width:768px) {
     .navbar .nav {
         max-width: 80%
     }
@@ -869,7 +869,7 @@ h4 {
     }
 }
 
-@media(max-width:991px) {
+@media (max-width:991px) {
     .container {
         width: 100%
     }
@@ -903,7 +903,7 @@ h4 {
     }
 }
 
-@media(max-width:767px) {
+@media (max-width:767px) {
     .page-container {
         overflow-x: hidden;
         position: relative
@@ -959,7 +959,7 @@ h4 {
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px !important;
-        border: 4px solid black;
+        border: 4px solid #000;
         border-bottom-color: transparent;
         border-right-color: transparent;
         border-left-color: transparent
@@ -1071,14 +1071,14 @@ h4 {
     }
 }
 
-@media(max-width:400px) {
+@media (max-width:400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0
     }
 }
 
-@media(max-width:767px) {
+@media (max-width:767px) {
     .bloc-mob-center-text {
         text-align: center
     }
