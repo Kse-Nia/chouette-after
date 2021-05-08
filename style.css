@@ -819,10 +819,12 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
+    object-fit: cover;
 }
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+    object-fit: cover;
 }
 
 @media (max-width: 1024px) {
