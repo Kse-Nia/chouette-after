@@ -1438,6 +1438,7 @@ img {
     display: block;
     max-width: 100%;
     object-fit: cover;
+    aspect-ratio: attr(width) / attr(height);
     height: auto
 }
 
@@ -7796,6 +7797,7 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
+    aspect-ratio: attr(width) / attr(height); 
     margin-left: auto
 }
 
