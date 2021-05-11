@@ -1979,7 +1979,9 @@
           h.isArray(t)
             ? (r = t.concat(t.map(h.camelCase)))
             : ((i = h.camelCase(t)),
-              (r = t in s ? [t, i] : (r = i) in s ? [r] : r.match(A) || [])),
+              t in s
+                ? (r = [t, i])
+                : (r = (r = i) in s ? [r] : r.match(A) || [])),
             (n = r.length);
           for (; n--; ) delete s[r[n]];
         }
@@ -3260,7 +3262,7 @@
             ? s && "get" in s && void 0 !== (i = s.get(e, !1, r))
               ? i
               : u[t]
-            : ("string" == (o = typeof n) &&
+            : ("string" === (o = typeof n) &&
                 (i = ke.exec(n)) &&
                 ((n = (i[1] + 1) * i[2] + parseFloat(h.css(e, t))),
                 (o = "number")),
