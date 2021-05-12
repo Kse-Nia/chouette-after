@@ -170,7 +170,7 @@ function inViewCheck() {
     var e = jQuery(this),
       i = e.offset().top + e.height(),
       a = $(window).scrollTop() + $(window).height();
-    if ((e.height() > $(window).height() && (i = e.offset().top), i < a)) {
+    if ((e.height() > $(window).height() && (i = e.offset().top), a > i)) {
       var o = e.attr("class").replace("hideMe", "animated");
       e.css("visibility", "hidden").removeAttr("class"),
         setTimeout(function () {
@@ -187,17 +187,17 @@ function scrollToTopView() {
 }
 function setUpVisibilityToggle() {
   $(document).on("click", "[data-toggle-visibility]", function (t) {
-    t.preventDefault();
-    var e = $(this).attr("data-toggle-visibility");
-    if (-1 != e.indexOf(",")) {
-      var i = e.split(",");
-      $.each(i, function (t) {
-        a($("#" + i[t]));
-      });
-    } else a($("#" + e));
-    function a(t) {
+    function e(t) {
       t.is("img") ? t.toggle() : t.slideToggle();
     }
+    t.preventDefault();
+    var i = $(this).attr("data-toggle-visibility");
+    if (-1 != i.indexOf(",")) {
+      var a = i.split(",");
+      $.each(a, function (t) {
+        e($("#" + a[t]));
+      });
+    } else e($("#" + i));
   });
 }
 function setUpLightBox() {
