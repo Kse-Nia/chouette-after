@@ -30,6 +30,11 @@ summary {
     display: block
 }
 
+figcaption{
+    color: black;
+    font-size: 1.1em;
+}
+
 audio,
 canvas,
 progress,
