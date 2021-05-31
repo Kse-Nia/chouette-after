@@ -30,7 +30,7 @@ summary {
     display: block
 }
 
-figcaption{
+figcaption {
     color: black;
     font-size: 1.1em;
     font-weight: 500;
@@ -1458,7 +1458,9 @@ img {
     display: block;
     max-width: 100%;
     object-fit: cover;
-    aspect-ratio: attr(width)/attr(height);
+    /*   aspect-ratio: attr(width)/attr(height); */
+
+    width: 100%;
     height: auto
 }
 
@@ -5391,7 +5393,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .navbar-brand {
     float: left;
-    aspect-ratio: attr(width) / attr(height);
+   /* aspect-ratio: attr(width) / attr(height); */
+width: 100%;
+   height: auto;
+
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px
@@ -8029,7 +8034,9 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
-    aspect-ratio: attr(width)/attr(height);
+   /* aspect-ratio: attr(width)/attr(height); */
+   max-width: 100px;
+  height: auto;
     margin-left: auto
 }
 
